@@ -71,10 +71,7 @@ img {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url("assets/hero-bg.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: linear-gradient(135deg, var(--pink-200), transparent 60%);
   opacity: 0.9;
   z-index: 0;
 }
