@@ -1,0 +1,15 @@
+{
+  "local_gateway": {
+    "merchant_id": "your-merchant-id",
+    "api_key": "your-api-key",
+    "api_secret": "your-api-secret",
+    "callback_url": "https://your-domain.com/payments/callback",
+    "webhook_url": "https://your-domain.com/payments/webhook"
+  },
+  "crypto_usdc": {
+    "wallet_or_account": "your-usdc-settlement-account",
+    "network": "base_or_ethereum",
+    "callback_url": "https://your-domain.com/payments/callback",
+    "webhook_url": "https://your-domain.com/payments/webhook"
+  }
+}
