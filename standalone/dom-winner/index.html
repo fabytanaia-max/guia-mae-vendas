@@ -1,0 +1,171 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Winner | Streetwear Premium</title>
+    <meta
+      name="description"
+      content="Dom Winner: marca de roupa com identidade forte, visual premium e atitude."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <a href="#topo" class="brand" aria-label="Dom Winner">
+          <img src="assets/logo-main.jpeg" alt="Dom Winner" />
+          <span>DOM WINNER</span>
+        </a>
+        <nav class="menu" aria-label="Principal">
+          <a href="#produtos">Ver produtos</a>
+          <a href="#sobre">Sobre a marca</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="topo">
+      <section class="hero">
+        <div class="grid-overlay"></div>
+        <div class="spot spot-a"></div>
+        <div class="spot spot-b"></div>
+        <div class="container hero-content">
+          <p class="kicker">Streetwear premium</p>
+          <h1>Vista a sua versão vencedora.</h1>
+          <p class="lead">
+            A Dom Winner nasceu para ativar o dom de vencer de cada pessoa com roupas que transmitem confiança, autoestima e conforto.
+          </p>
+          <div class="actions">
+            <a href="#contato" class="btn btn-light">Quero minha peça</a>
+            <a href="#produtos" class="btn btn-ghost">Ver produtos</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="marquee-section">
+        <div class="marquee-track" id="marquee"></div>
+      </section>
+
+      <section id="produtos" class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">Marketplace Dom Winner</p>
+            <h2>Ver produtos</h2>
+          </div>
+          <p class="proof-note">
+            Clique em um produto para ver fotos e vídeos de como ele fica no corpo.
+          </p>
+          <div class="category-nav" id="category-nav"></div>
+          <div class="product-grid" id="products"></div>
+        </div>
+      </section>
+
+      <section class="section trust-strip">
+        <div class="container trust-grid" id="trust-points"></div>
+      </section>
+
+      <section class="section lookbook">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">Lookbook</p>
+            <h2>Visual que comunica presença.</h2>
+          </div>
+          <div class="lookbook-grid" id="lookbook"></div>
+        </div>
+      </section>
+
+      <section id="sobre" class="section alt">
+        <div class="container manifesto">
+          <p class="kicker">Sobre a marca</p>
+          <h2>Dom Winner não é só roupa. É o dom de vencer.</h2>
+          <p>
+            Queremos mostrar para cada cliente que ele pode vencer em qualquer ambiente. Cada peça une atitude visual, conforto de uso e identidade forte para elevar confiança e autoestima.
+          </p>
+        </div>
+      </section>
+
+      <section class="section metrics">
+        <div class="container metrics-grid" id="metrics"></div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">Por que Dom Winner</p>
+            <h2>Design com atitude e qualidade no detalhe.</h2>
+          </div>
+          <div class="bullets" id="benefits"></div>
+        </div>
+      </section>
+
+      <section class="section testimonials">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">Prova social</p>
+            <h2>Quem veste, volta.</h2>
+          </div>
+          <div class="cards" id="testimonials"></div>
+        </div>
+      </section>
+
+      <section class="section drops">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">Lançamentos</p>
+            <h2>Drop da semana</h2>
+          </div>
+          <div class="drop-grid" id="weekly-drop"></div>
+        </div>
+      </section>
+
+      <section class="section shipping">
+        <div class="container shipping-box">
+          <p class="kicker">Operação atual</p>
+          <h2>Vendas focadas em todo o Brasil.</h2>
+          <p>Atendimento direto com suporte para escolha da peça ideal e orientação de compra.</p>
+        </div>
+      </section>
+
+      <section id="contato" class="cta">
+        <div class="container cta-box">
+          <h2>Pronto para ativar o seu dom de vencer?</h2>
+          <p>Fale com a Dom Winner no WhatsApp e veja as peças disponíveis para o seu estilo.</p>
+          <a class="btn btn-light" href="#" id="cta-link">Falar no WhatsApp</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>DOM WINNER <span id="year"></span></p>
+      </div>
+    </footer>
+
+    <div class="modal" id="product-modal" aria-hidden="true">
+      <div class="modal-box">
+        <button class="modal-close" id="modal-close" aria-label="Fechar">x</button>
+        <div class="modal-media" id="modal-media"></div>
+        <div class="modal-content">
+          <h3 id="modal-title"></h3>
+          <p id="modal-description"></p>
+          <ul class="modal-details" id="modal-details"></ul>
+          <p class="modal-combine-title">Combine com</p>
+          <div class="modal-combine" id="modal-combine"></div>
+          <a href="#" class="btn btn-light" id="modal-cta">Pedir no WhatsApp</a>
+          <button type="button" class="btn btn-ghost modal-close-secondary" id="modal-close-secondary">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" id="floating-cta" class="floating-cta">WhatsApp</a>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
